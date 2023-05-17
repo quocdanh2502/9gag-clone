@@ -1,1 +1,1 @@
-# 9gag-clone
+# A cloned site from 9GAG
