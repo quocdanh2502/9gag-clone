@@ -1,0 +1,22 @@
+.userProfile {
+  width: 75%;
+  margin-bottom: 15px;
+}
+
+.cardDescription {
+  white-space: break-spaces;
+}
+
+@media screen and (max-width: 992px) {
+  .userProfile {
+    margin: auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .userProfile {
+    border: none;
+    width: 100%;
+  }
+}

@@ -1,0 +1,36 @@
+.list-item {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--border-color-base);
+  margin-left: 10px;
+  min-width: 340px;
+}
+
+.postText {
+  height: 50vh;
+  max-height: 100vh;
+  overflow: auto;
+}
+
+.tag {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.shareButtonContainer {
+  display: block;
+}
+
+.shareButtonContainerSmallBreakpoint {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .shareButtonContainer {
+    display: none;
+  }
+
+  .shareButtonContainerSmallBreakpoint {
+    display: block;
+  }
+}

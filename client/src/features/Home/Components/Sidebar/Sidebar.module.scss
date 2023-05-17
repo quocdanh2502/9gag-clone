@@ -1,0 +1,62 @@
+@import '../../../../Style/color.scss';
+
+.sidebar {
+  background-color: $backGroundColorDarkTheme;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .title {
+    padding: 20px 20px 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $iconColorDarkTheme;
+  }
+  .text {
+    color: $textColorDarkTheme;
+    max-width: 150px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 2s ease-in;
+
+    // Override antd
+    .icon {
+      font-size: 2rem;
+      color: $iconSectionColorDarkTheme;
+      transition: all 0.3s ease-in;
+      z-index: 1;
+
+      &:hover {
+        color: $iconColorDarkTheme;
+      }
+    }
+
+    .highlightedIcon {
+      @extend .icon;
+      color: $iconHighlightColor;
+    }
+  }
+}
+
+.userSearch {
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .userSearch {
+    display: block;
+  }
+}

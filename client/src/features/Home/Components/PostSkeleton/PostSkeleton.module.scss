@@ -1,0 +1,28 @@
+.skeleton-image {
+  // Override ant-design default width
+  width: 90% !important;
+
+  // Override ant-design default height
+  height: 420px !important;
+
+  @media screen and (max-width: 500px) {
+    width: 95% !important;
+  }
+}
+
+.skeleton-button-container {
+  --skeleton-button-width: 75px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(var(--skeleton-button-width) * 3 + 25px);
+  margin-top: 15px;
+
+  .skeleton-button {
+    width: var(--skeleton-button-width) !important;
+  }
+}
+
+.skeleton-container {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
